@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://laykpd0v1iqb"]
+
+[ext_resource type="PackedScene" uid="uid://bve63ian72pwv" path="res://modules/weapons/weapon.tscn" id="1_glbg0"]
+[ext_resource type="Resource" uid="uid://dr07ht4dtjps0" path="res://resources/gun_resource/plasma_gun.tres" id="2_5sqf5"]
+[ext_resource type="Resource" uid="uid://bsqlkhxmjukso" path="res://resources/projectiles/plasma_projectile.tres" id="3_ccqj0"]
+
+[node name="Plasma_gun" instance=ExtResource("1_glbg0")]
+gun_resource = ExtResource("2_5sqf5")
+projectile_resource = ExtResource("3_ccqj0")
+
+[node name="Marker2D" parent="Markers cotainer" index="0"]
+position = Vector2(50, 0)
+
+[node name="Marker2D2" type="Marker2D" parent="Markers cotainer" index="1"]
+position = Vector2(50, 17)
+rotation = 0.23911
+
+[node name="Marker2D3" type="Marker2D" parent="Markers cotainer" index="2"]
+position = Vector2(51, -14)
+rotation = -0.359538
+
+[node name="FireTimer" parent="." index="1"]
+wait_time = 0.334

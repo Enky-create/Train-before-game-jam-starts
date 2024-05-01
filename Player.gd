@@ -25,6 +25,6 @@ func move(direction:Vector2):
 func dash():
 	print("dash")
 func action():
-	print("action")
+	action_signal.emit()
 func interact():
 	print("interact")
