@@ -9,7 +9,3 @@ func _ready():
 	add_child(player_instance)
 	entity_controller.entity=player_instance
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta):
-	pass

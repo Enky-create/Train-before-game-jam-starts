@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="DamageData" load_steps=2 format=3 uid="uid://dgqmsg2nmmwtk"]
+
+[ext_resource type="Script" path="res://resources/damage/damage_data.gd" id="1_tlayo"]
+
+[resource]
+script = ExtResource("1_tlayo")
+base_damage = 3.5
+armor_damage = 0.0
+magic_damage = 0.0

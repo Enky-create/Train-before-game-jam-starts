@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="GunResource" load_steps=2 format=3 uid="uid://dr07ht4dtjps0"]
+
+[ext_resource type="Script" path="res://resources/gun_resource/gun_resource.gd" id="1_b17n5"]
+
+[resource]
+script = ExtResource("1_b17n5")
+reload_time = 2.0
+shots_per_one_use = 3
+time_between_shots = 0.5
+max_ammo = 50

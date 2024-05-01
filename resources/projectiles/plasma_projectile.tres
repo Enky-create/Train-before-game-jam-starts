@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="ProjectileResource" load_steps=6 format=3 uid="uid://bsqlkhxmjukso"]
+
+[ext_resource type="Texture2D" uid="uid://bcokuscsiyw72" path="res://assets/graphics/projectiles/blue.png" id="1_cquk5"]
+[ext_resource type="Script" path="res://resources/projectiles/projectile_resource.gd" id="1_gmcyx"]
+[ext_resource type="Script" path="res://resources/damage/damage_data.gd" id="2_4cqjp"]
+
+[sub_resource type="Resource" id="Resource_iha6m"]
+script = ExtResource("2_4cqjp")
+base_damage = 3.5
+armor_damage = 0.0
+magic_damage = 0.0
+
+[sub_resource type="BulletSpeedData" id="BulletSpeedData_72qcj"]
+speed = 100.0
+max_speed = 3000.0
+acceleration = 500.0
+
+[resource]
+script = ExtResource("1_gmcyx")
+allTextures = Array[Texture2D]([ExtResource("1_cquk5")])
+speed_data = SubResource("BulletSpeedData_72qcj")
+collision_layer = Array[int]([3])
+collision_mask = Array[int]([4])
+texture_size = Vector2(150, 75)
+collision_shape_size = Vector2(125, 25)
+collision_shape_offset = Vector2(0, 0)
+max_change_texture_time = 0.3
+damage_data = SubResource("Resource_iha6m")
+life_time = 3.0
